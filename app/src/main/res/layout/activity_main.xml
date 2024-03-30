@@ -27,7 +27,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginBottom="5dp"
-                android:buttonTint="@color/skyblue"
+                android:buttonTint="@color/red"
+                android:textStyle="bold"
                 android:text="Monuments and Architecture"
                 android:textColor="@color/skyblue"
                 android:textSize="18dp" />
@@ -38,9 +39,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginBottom="5dp"
-                android:buttonTint="@color/skyblue"
+                android:textStyle="bold"
+                android:buttonTint="@color/red"
                 android:text="Parks and Natural environment"
-                android:textColor="#4CAF50"
+                android:textColor="@color/skyblue"
                 android:textSize="18dp" />
 
             <RadioButton
@@ -48,9 +50,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:buttonTint="@color/skyblue"
+                android:buttonTint="@color/red"
+                android:textStyle="bold"
                 android:text="Museums and Galleries"
-                android:textColor="@color/black"
+                android:textColor="@color/skyblue"
                 android:textSize="18dp" />
 
             <RadioButton
@@ -58,9 +61,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:buttonTint="@color/skyblue"
+                android:buttonTint="@color/red"
+                android:textStyle="bold"
                 android:text="Entertainment and Culture"
-                android:textColor="#FF9800"
+                android:textColor="@color/skyblue"
                 android:textSize="18dp" />
 
             <RadioButton
@@ -68,9 +72,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:buttonTint="@color/skyblue"
+                android:buttonTint="@color/red"
+                android:textStyle="bold"
                 android:text="Shopping Malls"
-                android:textColor="#673AB7"
+                android:textColor="@color/skyblue"
                 android:textSize="18dp" />
         </RadioGroup>
 
@@ -80,12 +85,12 @@
         android:id="@+id/nextBtn"
         android:layout_width="157dp"
         android:layout_height="53dp"
-        android:backgroundTint="@color/teal_200"
-        android:gravity="center"
-        android:layout_marginTop="80dp"
         android:layout_gravity="center"
-        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/red"
+        android:gravity="center"
+        android:text="NEXT"
         android:textColor="@color/white"
-        android:text="NEXT"/>
+        android:textStyle="bold" />
 
 </LinearLayout>

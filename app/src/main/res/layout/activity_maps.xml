@@ -15,10 +15,16 @@
         <!-- Add your map fragment here -->
         <fragment
             android:id="@+id/map"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            map:uiZoomControls="true"
+            map:uiZoomGestures="true"
+            map:uiRotateGestures="true"
+            map:mapType="normal"
             tools:layout="@layout/activity_landmarks" />
+
     </LinearLayout>
 
     <!-- Navigation drawer layout -->

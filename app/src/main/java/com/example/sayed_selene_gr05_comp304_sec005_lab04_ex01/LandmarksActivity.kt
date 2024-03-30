@@ -65,10 +65,11 @@ class LandmarksActivity : AppCompatActivity() {
             }
         }
 
-        binding.btnShowMap.setOnClickListener{
+        binding.btnShowNormalMap.setOnClickListener{
             if(!selectedLandmark.isEmpty()){
                 val intent = Intent(this,MapsActivity::class.java)
                 intent.putExtra("selectedLandmark",selectedLandmark)
+                intent.putExtra("mapType", 1)
                 startActivity(intent)
             }else{
                 Toast.makeText(
@@ -77,7 +78,21 @@ class LandmarksActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             }
+        }
 
+        binding.btnShowSatelliteMap.setOnClickListener{
+            if(!selectedLandmark.isEmpty()){
+                val intent = Intent(this,MapsActivity::class.java)
+                intent.putExtra("selectedLandmark",selectedLandmark)
+                intent.putExtra("mapType", 2)
+                startActivity(intent)
+            }else{
+                Toast.makeText(
+                    this,
+                    "Please select a landmark to visit!",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
         }
     }
 
@@ -87,9 +102,9 @@ class LandmarksActivity : AppCompatActivity() {
             val radioButton = RadioButton(this)
             radioButton.text = name
             radioButton.textSize = 16f // Set your desired text size
-            radioButton.setTextColor(ContextCompat.getColor(this, R.color.textColor))
+            radioButton.setTextColor(ContextCompat.getColor(this, R.color.black))
             radioButton.setTypeface(null, Typeface.BOLD)
-            radioButton.buttonTintList = ColorStateList.valueOf(ContextCompat.getColor(this, R.color.skyblue))
+            radioButton.buttonTintList = ColorStateList.valueOf(ContextCompat.getColor(this, R.color.orange))
 
             radioGroup.addView(radioButton)
 
