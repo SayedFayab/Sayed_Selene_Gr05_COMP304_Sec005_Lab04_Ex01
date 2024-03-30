@@ -28,7 +28,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginBottom="5dp"
                 android:buttonTint="@color/skyblue"
-                android:text="Landmarks and Architecture"
+                android:text="Monuments and Architecture"
                 android:textColor="@color/skyblue"
                 android:textSize="18dp" />
 
@@ -39,8 +39,8 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginBottom="5dp"
                 android:buttonTint="@color/skyblue"
-                android:text="Parks and Nature"
-                android:textColor="@color/purple_700"
+                android:text="Parks and Natural environment"
+                android:textColor="#4CAF50"
                 android:textSize="18dp" />
 
             <RadioButton
@@ -69,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:buttonTint="@color/skyblue"
-                android:text="Shopping and Dining"
+                android:text="Shopping Malls"
                 android:textColor="#673AB7"
                 android:textSize="18dp" />
         </RadioGroup>

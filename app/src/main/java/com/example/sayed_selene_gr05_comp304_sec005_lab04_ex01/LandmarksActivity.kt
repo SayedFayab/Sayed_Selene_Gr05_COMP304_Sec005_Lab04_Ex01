@@ -33,7 +33,7 @@ class LandmarksActivity : AppCompatActivity() {
         textView.text = selectedOption
         textView.textSize = 28f
         textView.setTypeface(null, Typeface.BOLD)
-        val textColor = ContextCompat.getColor(this, R.color.skyblue)
+        val textColor = ContextCompat.getColor(this, R.color.teal_200)
         textView.setTextColor(textColor)
 
         layoutContentContainer.addView(textView)
@@ -49,11 +49,11 @@ class LandmarksActivity : AppCompatActivity() {
         if (selectedOption != null) {
             // Show the corresponding fragment based on the selectedOption
             when (selectedOption) {
-                "Landmarks and Architecture" -> createLayout(radioGroup,R.array.landmark_and_architectures)
-                "Parks and Nature" -> createLayout(radioGroup,R.array.parks_nature)
+                "Monuments and Architecture" -> createLayout(radioGroup,R.array.Monument_and_architectures)
+                "Parks and Natural environment" -> createLayout(radioGroup,R.array.parks_Natural_environment)
                 "Museums and Galleries" -> createLayout(radioGroup,R.array.museums_galleries)
                 "Entertainment and Culture" -> createLayout(radioGroup,R.array.entertainment_culture)
-                "Shopping and Dining" -> createLayout(radioGroup,R.array.shopping_dining)
+                "Shopping Malls" -> createLayout(radioGroup,R.array.shopping_Malls)
             }
         }
         layoutContentContainer.addView(radioGroup)
@@ -87,7 +87,7 @@ class LandmarksActivity : AppCompatActivity() {
             val radioButton = RadioButton(this)
             radioButton.text = name
             radioButton.textSize = 16f // Set your desired text size
-            radioButton.setTextColor(ContextCompat.getColor(this, R.color.skyblue))
+            radioButton.setTextColor(ContextCompat.getColor(this, R.color.textColor))
             radioButton.setTypeface(null, Typeface.BOLD)
             radioButton.buttonTintList = ColorStateList.valueOf(ContextCompat.getColor(this, R.color.skyblue))
 

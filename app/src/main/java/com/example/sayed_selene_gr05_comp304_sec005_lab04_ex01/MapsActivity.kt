@@ -93,125 +93,90 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
     private fun showLocation() {
-
         var latLongInfo: DoubleArray = DoubleArray(2)
 
-        when(landmark) {
-
-
+        when (landmark) {
             "CN Tower" -> {
-                latLongInfo = DoubleArray(2)
-                latLongInfo[0] = 43.64263604726139
-                latLongInfo[1] = -79.38704607480089
+                latLongInfo = doubleArrayOf(43.64263604726139, -79.38704607480089)
             }
-
 
             "Ripley's Aquarium of Canada" -> {
-                latLongInfo = DoubleArray(2)
-                latLongInfo[0] = 43.642357044499306
-                latLongInfo[1] = -79.38630179623084
+                latLongInfo = doubleArrayOf(43.642357044499306, -79.38630179623084)
             }
 
-
-            "St. Lawrence Market" -> {
-                latLongInfo = DoubleArray(2)
-                latLongInfo[0] = 43.648843135521304
-                latLongInfo[1] = -79.37155613247236
+            "The Ed Mirvish Theatre" -> {
+                latLongInfo = doubleArrayOf(43.65523, -79.3795)
             }
-
 
             "Canada's Wonderland" -> {
-                latLongInfo = DoubleArray(2)
-                latLongInfo[0] = 43.84314758006409
-                latLongInfo[1] = -79.53947070362476
+                latLongInfo = doubleArrayOf(43.84314758006409, -79.53947070362476)
             }
-
 
             "Art Gallery of Ontario (AGO)" -> {
-                latLongInfo = DoubleArray(2)
-                latLongInfo[0] = 43.65375406023005
-                latLongInfo[1] = -79.39248011712834
+                latLongInfo = doubleArrayOf(43.65375406023005, -79.39248011712834)
             }
-
 
             "Royal Ontario Museum (ROM)" -> {
-                latLongInfo = DoubleArray(2)
-                latLongInfo[0] = 43.6679114508344
-                latLongInfo[1] = -79.39480929014314
+                latLongInfo = doubleArrayOf(43.6679114508344, -79.39480929014314)
             }
 
-
-
             "The Aga Khan Museum" -> {
-                latLongInfo = DoubleArray(2)
-                latLongInfo[0] = 43.725383877533496
-                latLongInfo[1] = -79.33213727294441
+                latLongInfo = doubleArrayOf(43.725383877533496, -79.33213727294441)
+            }
+            "Museum of Contemporary Art" -> {
+                latLongInfo = doubleArrayOf(41.383190, 2.166867)
             }
 
 
             "High Park" -> {
-                latLongInfo = DoubleArray(2)
-                latLongInfo[0] = 43.64671090454008
-                latLongInfo[1] = -79.4637010324725
+                latLongInfo = doubleArrayOf(43.64671090454008, -79.4637010324725)
             }
-
 
             "Toronto Islands" -> {
-                latLongInfo = DoubleArray(2)
-                latLongInfo[0] = 43.620560
-                latLongInfo[1] = -79.376511
+                latLongInfo = doubleArrayOf(43.620560, -79.376511)
             }
-
 
             "Centennial Park" -> {
-                latLongInfo = DoubleArray(2)
-                latLongInfo[0] = 43.65373
-                latLongInfo[1] = -79.58476
-            }
-//"E
-
-                "Eaton Center" -> {
-            latLongInfo = DoubleArray(2)
-            latLongInfo[0] = 43.65468657019543
-            latLongInfo[1] = -79.38075304781574
-
-
-        }
-
-            "Sherway Gardens " -> {
-                latLongInfo = DoubleArray(2)
-                latLongInfo[0] = 43.611294
-                latLongInfo[1] = -79.558067
+                latLongInfo = doubleArrayOf(43.65373, -79.58476)
             }
 
+            "Eaton Centre" -> {
+                latLongInfo = doubleArrayOf(43.6548, -79.3807)
+            }
+
+            "Sherway Gardens" -> {
+                latLongInfo = doubleArrayOf(43.611294, -79.558067)
+            }
 
             "Scarborough Town Center" -> {
-                latLongInfo = DoubleArray(2)
-                latLongInfo[0] = 43.776035
-                latLongInfo[1] = -79.257713
+                latLongInfo = doubleArrayOf(43.776035, -79.257713)
+            }
+            "Fairview Mall(Don Mills)" -> {
+                latLongInfo = doubleArrayOf(43.777882, -79.345879)
             }
 
             "Casa Loma" -> {
-                latLongInfo = DoubleArray(2)
-                latLongInfo[0] = 43.678055
-                latLongInfo[1] = -79.409538
+                latLongInfo = doubleArrayOf(43.678055, -79.409538)
             }
 
-           "Rogers Centre" -> {
-               latLongInfo = DoubleArray(2)
-               latLongInfo[0] = 43.641796
-               latLongInfo[1] = -79.390083
-           }
+            "Rogers Centre" -> {
+                latLongInfo = doubleArrayOf(43.641796, -79.390083)
+            }
+
             "Toronto Zoo" -> {
-            latLongInfo = DoubleArray(2)
-            latLongInfo[0] = 43.8179
-            latLongInfo[1] = -79.1854
+                latLongInfo = doubleArrayOf(43.8179, -79.1854)
+            }
         }
 
-        }
-        mMap.addMarker(MarkerOptions().position(LatLng(latLongInfo[0], latLongInfo[1])).title(landmark))
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(LatLng(latLongInfo[0], latLongInfo[1]), 17f))
+        mMap.addMarker(
+            MarkerOptions().position(LatLng(latLongInfo[0], latLongInfo[1])).title(landmark)
+        )
+        mMap.animateCamera(
+            CameraUpdateFactory.newLatLngZoom(
+                LatLng(latLongInfo[0], latLongInfo[1]),
+                17f
+            )
+        )
         supportActionBar?.title = landmark
     }
-
 }
