@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/main_back_ground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RadioGroup
+            android:id="@+id/radioGroupLandMarkCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="210dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/radio_button_background">
+
+            <RadioButton
+                android:id="@+id/categoryLandMarksAndArchitecture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                android:buttonTint="@color/skyblue"
+                android:text="Landmarks and Architecture"
+                android:textColor="@color/skyblue"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/categoryMuseumsAndGalleries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                android:buttonTint="@color/skyblue"
+                android:text="Parks and Nature"
+                android:textColor="@color/purple_700"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/categoryParksAndNature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:buttonTint="@color/skyblue"
+                android:text="Museums and Galleries"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/categoryEntertainmentAndCulture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:buttonTint="@color/skyblue"
+                android:text="Entertainment and Culture"
+                android:textColor="#FF9800"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/categoryShoppingAndDining"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:buttonTint="@color/skyblue"
+                android:text="Shopping and Dining"
+                android:textColor="#673AB7"
+                android:textSize="18dp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="157dp"
+        android:layout_height="53dp"
+        android:backgroundTint="@color/teal_200"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="NEXT"/>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="radioGroupPaymentOptions" type="id" />
+    <item name="map" type="id" />
+    <item name="nav_item_normal" type="id" />
+    <item name="nav_item_hybrid" type="id" />
+    <item name="nav_item_satellite" type="id" />
+    <item name="nav_item_terrain" type="id" />
+    <item name="nextBtn" type="id" />
+    <item name="categoryShoppingAndDining" type="id" />
+    <item name="categoryEntertainmentAndCulture" type="id" />
+    <item name="categoryParksAndNature" type="id" />
+    <item name="categoryMuseumsAndGalleries" type="id" />
+    <item name="categoryLandMarksAndArchitecture" type="id" />
+    <item name="radioGroupLandMarkCategories" type="id" />
+</resources>

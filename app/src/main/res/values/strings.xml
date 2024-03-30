@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Sayed_Selene_Gr05_COMP304_Sec005_Lab04_Ex01</string>
+<string name="title_activity_maps">MapsActivity</string>
+<string name="hello_blank_fragment">Hello blank fragment</string>
+<string-array name="landmark_and_architectures">
+    <item>CN Tower</item>
+    <item>Ripley\'s Aquarium of Canada</item>
+    <item>Rogers Centre</item>
+    <item>Toronto Zoo</item>
+    <item>Casa Loma</item>
+</string-array>
+<string-array name="entertainment_culture">
+    <item>Ripley\'s Aquarium of Canada</item>
+    <item>St. Lawrence Market</item>
+    <item>Canada\'s Wonderland</item>
+</string-array>
+<string-array name="museums_galleries">
+    <item>Art Gallery of Ontario (AGO)</item>
+    <item>Royal Ontario Museum (ROM)</item>
+    <item>The Aga Khan Museum</item>
+</string-array>
+<string-array name="parks_nature">
+    <item>High Park</item>
+    <item>Toronto Islands</item>
+    <item>Centennial Park</item>
+</string-array>
+<string-array name="shopping_dining">
+    <item>Eaton Centre</item>
+    <item>Sherway Gardens</item>
+    <item>Scarborough Town Center</item>
+</string-array>
+
+<string-array name="nav_drawer_items">
+    <item>Normal</item>
+    <item>Satellite</item>
+    <item>Terrain</item>
+    <item>Hybrid</item>
+</string-array>
+</resources>
